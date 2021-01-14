@@ -8,8 +8,9 @@ class Person
   def get_married(person)
     self.partner = person
     if person.class != Person 
+      begin
       raise ParentError
-      rescue "Hello"
+      rescue ParentError
     end
     else
     person.partner = self
