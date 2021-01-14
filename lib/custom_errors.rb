@@ -9,7 +9,8 @@ class Person
     self.partner = person
     if person.class != Person 
       raise ParentError
-      rescue ParentError 
+      rescue ParentError
+    end
     else
     person.partner = self
     end
